@@ -1,0 +1,65 @@
+.batteries__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.batteries__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background-image: url(../img/index/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+}
+
+.batteries__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.batteries__right-body {
+  padding: 193px 0 0 70px;
+  width: 530px;
+}
+
+.batteries__right-body h2 {
+  margin-bottom: 65px;
+}
+
+.batteries__right-body p {
+  line-height: 30px;
+}
+
+.batteries__right-el a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 8.7px 20px 0 rgba(247, 145, 29, 0.4);
+          box-shadow: 5px 8.7px 20px 0 rgba(247, 145, 29, 0.4);
+  position: relative;
+}
+
+.batteries__right-el a::before {
+  content: '';
+  position: absolute;
+  border: solid 1px #f0f0f0;
+}
+
+.batteries__right-el svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}

@@ -1,0 +1,19 @@
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__title h2 {
+  margin-bottom: 23px;
+}
+
+.advantages__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__elem {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
