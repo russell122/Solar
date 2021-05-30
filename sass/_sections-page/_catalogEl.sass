@@ -1,0 +1,212 @@
+.catalogEl
+	padding-top: 167px
+	@media only screen and (max-width: $md)
+		padding-top: 140px
+	&__top
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		@media only screen and (max-width: $md)
+			flex-direction: column
+			align-items: flex-start
+		h2
+			margin-bottom: 0
+			@media only screen and (max-width: $md)
+				margin-bottom: 20px
+	&__top-right
+		margin-left: auto
+		display: flex
+		@media only screen and (max-width: $md)
+			margin-left: 0
+			width: 100%
+			justify-content: space-between
+		@media only screen and (max-width: $sm)
+			flex-direction: column
+		.location
+			margin-right: 86px
+			@media only screen and (max-width: $lg)
+				margin-right: 40px
+			@media only screen and (max-width: $md)
+				margin-right: 0
+				margin-bottom: 10px
+			@media only screen and (max-width: $sm)
+				position: relative
+				z-index: 1
+				&:last-child
+					margin-bottom: 0
+			&:last-child
+				margin-right: 0
+		.location.open
+			@media only screen and (max-width: $sm)
+				z-index: 2
+	&__row
+		display: flex
+		@media only screen and (max-width: $md)
+			flex-wrap: wrap
+			flex-direction: column
+	&__left
+		flex: 0 1 30%
+		margin-right: 2%
+		@media only screen and (max-width: $md)
+			flex: 0 1 100%
+			width: 100%
+		.button3
+			display: none
+			@media only screen and (max-width: $md)
+				display: inline-flex
+				margin-bottom: 30px
+	&__menu
+		padding: 0
+		margin: 0 0 25px 0
+		list-style-type: none
+		@media only screen and (max-width: $md)
+			display: none
+		li
+			border: 1px solid $borderColor
+			a
+				padding: 18px
+				display: block
+				@media only screen and (max-width: $lg)
+					padding: 12px
+	.pr
+		color: $accent
+		display: block
+	.pr2
+		color: $accent
+		margin-bottom: 35px
+		display: block
+		@media only screen and (max-width: $lg)
+			margin-bottom: 20px
+	&__price, &__manufacturer, &__voltage
+		border: 1px solid $borderColor
+		padding: 23px
+		margin-bottom: 25px
+		@media only screen and (max-width: $lg)
+			padding: 12px
+		@media only screen and (max-width: $md)
+			display: none
+	&__price-inp
+		margin-top: 15px
+		display: flex
+		justify-content: space-between
+		input
+			border: solid 1px #efefef
+			width: 95px
+			height: 33px
+			padding-left: 10px
+			&::placeholder
+				color: $black
+	&__right
+		flex: 0 1 68%
+		width: 68%
+		@media only screen and (max-width: $md)
+			flex: 0 1 100%
+			width: 100%
+	&__right-row
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 30px
+	&__right-col
+		position: relative
+		flex: 0 1 33.333%
+		min-height: 376px
+		height: 100%
+		@media only screen and (max-width: $xl)
+			min-height: 297px
+		@media only screen and (max-width: $lg)
+			flex: 0 1 50%
+			min-height: 332px
+		@media only screen and (max-width: $sm)
+			flex: 0 1 100%
+			// min-height: 350px
+	&__right-elem
+		border: solid 1px #efefef
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		text-align: center
+		padding: 20px 20px 30px 20px
+		transition: all ease .2s
+		cursor: pointer
+		position: absolute
+		z-index: 0
+		background-color: #fff
+		@media only screen and (max-width: $xl)
+			padding: 15px
+		@media only screen and (max-width: $md)
+			width: 100%
+		&:hover
+			box-shadow: 0px 5px 15px 0 rgba(23, 22, 23, 0.15)
+			z-index: 5
+			.catalogEl__right-hid
+				opacity: 1
+				visibility: visible
+				transition: all ease .2s
+				display: flex
+				flex-direction: column
+				@media only screen and (max-width: $sm)
+					justify-content: center
+					align-items: center
+	&__right-body
+		margin-bottom: 15px
+		p
+			font-size: 16px
+			margin-bottom: 15px
+			@media only screen and (max-width: $xl)
+				font-size: 14px
+				margin-bottom: 10px
+	span.catalogEl__right-elem-pr
+		color: $accent
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 20px
+		@media only screen and (max-width: $xl)
+			font-size: 20px
+	&__right-hid
+		opacity: 1
+		visibility: hidden
+		display: none
+		// width: 0
+		// height: 0
+		transition: all ease .2s
+		width: 100%
+		// padding: 0 30px
+		.button
+			font-weight: 700
+			width: 100%
+			margin-bottom: 20px
+			@media only screen and (max-width: $sm)
+				width: 200px
+			svg
+				width: 16px
+				height: 16px
+				fill: $white
+				margin-right: 5px
+				transition: all ease .2s
+			&:hover
+				svg
+					fill: $black
+		.elems
+			display: flex
+			justify-content: space-between
+			@media only screen and (max-width: $xl)
+				flex-direction: column
+			a
+				display: flex
+				align-items: center
+				font-size: 12px
+				@media only screen and (max-width: $xl)
+					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 0
+				&:hover
+					svg
+						fill: $accent
+						transition: all ease .2s
+				svg
+					width: 16px
+					height: 16px
+					fill: $grayLigth
+					margin-right: 5px
+					transition: all ease .2s

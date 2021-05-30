@@ -1,0 +1,290 @@
+.order
+	background-image: url(../img/index/bg4.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 900px
+	position: relative
+	@media only screen and (max-width: $lg)
+		height: 1100px
+	@media only screen and (max-width: $sm)
+		height: 1000px
+	.order__wr
+		overflow: hidden
+		height: 100%
+		// margin: 0 auto
+		// width: 1300px
+		// @media only screen and (max-width: 1300px)
+		// 	width: 1200px
+		// @media only screen and (max-width: $xl)
+		// 	width: 1050px
+	.timeline__elem-text
+		line-height: 24px
+		transition: all ease .2s
+		.b
+			font-weight: 600
+		.m
+			font-weight: 400
+	&__body
+		text-align: center
+		color: $white
+		padding: 184px 0 0 0
+		width: 860px
+		margin: 0 auto 220px auto
+		@media only screen and (max-width: $lg)
+			margin: 0 auto 60px auto
+			width: 100%
+			padding: 84px 0 0 0
+		@media only screen and (max-width: $sm)
+			margin: 0 auto 50px auto
+			padding: 35px 0 0 0
+		h2
+			margin-bottom: 35px
+			@media only screen and (max-width: $sm)
+				margin-bottom: 25px
+		p
+			font-size: 16px
+	.timeline
+		position: relative
+		&__block-l
+			width: 100%
+			height: 1px
+			background-color: $accent2
+			position: relative
+			overflow: hidden
+			@media only screen and (max-width: $lg)
+				width: 1px
+				height: 700px
+			&::before
+				content: ''
+				background: linear-gradient(90deg, rgba(247, 244, 241, 0.1), rgba(238, 226, 221, 0.5))
+				height: 800%
+				width: 15%
+				position: absolute
+				z-index: 5
+				top: -3px
+				transform: skewX(-45deg)
+				animation: btn-anim 7s ease infinite
+				@media only screen and (max-width: $lg)
+					// right: 0
+					height: 10%
+					width: 1000%
+					transform: skewX(0deg)
+					animation: btn-anim2 7s ease infinite
+					left: -5px
+		&__block
+			width: 100%
+			// background-color: $accent2
+			position: relative
+
+		&__elem-body
+			color: $white
+			font-size: 16px
+			position: absolute
+			width: 315px
+			top: -100px
+			transition: all ease .2s
+			@media only screen and (max-width: $xl)
+				width: 200px
+				top: -150px
+			@media only screen and (max-width: $lg)
+				top: 0
+				left: 150px
+			@media only screen and (max-width: $sm)
+				left: 80px
+			&::before
+				content: '01'
+				position: absolute
+				left: -40px
+				top: -27px
+				font-size: 60px
+				font-weight: 600
+				color: rgba(255, 255, 255, 0.1)
+			h4
+				font-weight: bold
+				margin-bottom: 5px
+		&__elem-body-5
+			color: $white
+			font-size: 16px
+			position: absolute
+			width: 315px
+			top: -100px
+			@media only screen and (max-width: $xl)
+				width: 200px
+				top: -150px
+			@media only screen and (max-width: $lg)
+				top: 0
+				left: 150px
+			@media only screen and (max-width: $sm)
+				left: 80px
+			&::before
+				content: '05'
+				position: absolute
+				left: -40px
+				top: -27px
+				font-size: 60px
+				font-weight: 600
+				color: rgba(255, 255, 255, 0.1)
+			h4
+				font-weight: bold
+				margin-bottom: 5px
+		&__elem-body-3
+			color: $white
+			font-size: 16px
+			position: absolute
+			width: 315px
+			top: -100px
+			@media only screen and (max-width: $xl)
+				width: 200px
+				top: -150px
+			@media only screen and (max-width: $lg)
+				top: 0
+				left: 150px
+			@media only screen and (max-width: $sm)
+				left: 80px
+			&::before
+				content: '03'
+				position: absolute
+				left: -40px
+				top: -27px
+				font-size: 60px
+				font-weight: 600
+				color: rgba(255, 255, 255, 0.1)
+			h4
+				font-weight: bold
+				margin-bottom: 5px
+		&__elem-body-2
+			color: $white
+			font-size: 16px
+			position: absolute
+			width: 315px
+			top: 100px
+			@media only screen and (max-width: $xl)
+				width: 200px
+			@media only screen and (max-width: $lg)
+				top: 0px
+				left: 150px
+			@media only screen and (max-width: $sm)
+				left: 80px
+			&::before
+				content: '02'
+				position: absolute
+				left: -40px
+				top: -27px
+				font-size: 60px
+				font-weight: 600
+				color: rgba(255, 255, 255, 0.1)
+			h4
+				font-weight: bold
+				margin-bottom: 5px
+		&__elem-body-4
+			color: $white
+			font-size: 16px
+			position: absolute
+			width: 315px
+			top: 100px
+			@media only screen and (max-width: $xl)
+				width: 200px
+			@media only screen and (max-width: $lg)
+				top: 0
+				left: 150px
+			@media only screen and (max-width: $sm)
+				left: 80px
+			&::before
+				content: '04'
+				position: absolute
+				left: -40px
+				top: -27px
+				font-size: 60px
+				font-weight: 600
+				color: rgba(255, 255, 255, 0.1)
+			h4
+				font-weight: bold
+				margin-bottom: 5px
+		&__elem
+			position: absolute
+			z-index: 1
+			top: 50%
+			transform: translate(0%, -50%)
+			width: 20px
+			height: 20px
+			background-color: #000
+			border-radius: 50%
+			border: 1px solid $accent2
+			transition: all ease .2s
+			&:hover
+				&::before
+					width: 10px
+					height: 10px
+					transition: all ease .2s
+				.timeline__elem-text,.timeline__elem-body
+					color: $accent2
+					transition: all ease .2s
+			&::before
+				content: ''
+				position: absolute
+				z-index: -1
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 9px
+				height: 9px
+				background-color: $accent2
+				border-radius: 50%
+				transition: all ease .2s
+		&__elem-1
+			top: 50%
+			transform: translate(0%, -50%)
+			@media only screen and (max-width: $lg)
+				top: 0
+				transform: translate(-50%, 0%)
+		&__elem-2
+			top: 50%
+			left: 210px
+			transform: translate(0%, -50%)
+			@media only screen and (max-width: $xl)
+				left: 150px
+			@media only screen and (max-width: $lg)
+				top: 150px
+				transform: translate(-50%, 0%)
+				left: 0
+		&__elem-3
+			top: 50%
+			left: 420px
+			transform: translate(0%, -50%)
+			@media only screen and (max-width: $xl)
+				left: 350px
+			@media only screen and (max-width: $lg)
+				top: 300px
+				transform: translate(-50%, 0%)
+				left: 0
+		&__elem-4
+			top: 50%
+			left: 630px
+			transform: translate(0%, -50%)
+			@media only screen and (max-width: $xl)
+				left: 550px
+			@media only screen and (max-width: $lg)
+				top: 450px
+				transform: translate(-50%, 0%)
+				left: 0
+		&__elem-5
+			top: 50%
+			left: 840px
+			transform: translate(0%, -50%)
+			@media only screen and (max-width: $xl)
+				left: 750px
+			@media only screen and (max-width: $lg)
+				top: 600px
+				transform: translate(-50%, 0%)
+				left: 0
+@keyframes btn-anim
+	0%, 55%
+		left: -100%
+	100%
+		left: 130%
+@keyframes btn-anim2
+	0%, 55%
+		top: -100%
+	100%
+		top: 130%

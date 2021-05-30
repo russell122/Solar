@@ -1,0 +1,201 @@
+.cardEl
+	&__wrap
+		display: flex
+		margin-bottom: 50px
+		@media screen and(max-width: $lg)
+			flex-wrap: wrap
+			flex-direction: column
+		@media screen and(max-width: $sm)
+			margin-bottom: 30px
+	h2
+		margin-bottom: 40px
+		@media screen and(max-width: $sm)
+			margin-bottom: 20px
+	&__soc
+		display: flex
+		flex-direction: column
+		margin-right: 40px
+		position: absolute
+		width: 180px
+	&__soc-el
+		border: 1px solid $borderColor
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 44px
+		height: 44px
+		transition: all ease .2s
+		&:hover
+			width: 164px
+			background-color: $accent
+			border: 1px solid $accent
+			transition: all ease .2s
+			justify-content: flex-start
+			padding-left: 15px
+			svg
+				margin-right: 15px
+				fill: $white
+			span
+				width: auto
+				height: auto
+				opacity: 1
+				visibility: visible
+		svg
+			width: 16px
+			height: 16px
+			fill: $black
+		span
+			opacity: 0
+			visibility: hidden
+			width: 0
+			// transition: all ease .2s
+			height: 0
+			color: $white
+	&__img
+		padding-left: 100px
+		margin-right: 40px
+		flex: 0 1 42%
+		@media screen and(max-width: $xl)
+			padding-left: 50px
+			margin-right: 20px
+		@media screen and(max-width: $lg)
+			flex: 0 1 100%
+			padding-left: 100px
+			margin-right: 0
+			margin-bottom: 30px
+	&__body
+		flex: 0 1 58%
+	&__body-left
+		width: 540px
+		@media screen and(max-width: $xl)
+			width: 450px
+		@media screen and(max-width: $lg)
+			width: 100%
+			margin-right: 30px
+			margin-bottom: 20px
+
+	&__body-top
+		display: flex
+		justify-content: space-between
+		@media screen and(max-width: $sm)
+			flex-direction: column
+	&__body-elem
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #000
+		border-bottom: 1px solid $borderColor
+		padding-bottom: 10px
+		margin-bottom: 10px
+		@media screen and(max-width: $sm)
+			flex-direction: column
+			align-items: flex-start
+			padding-bottom: 5px
+			margin-bottom: 5px
+		&:last-child
+			border-bottom: 0px solid #000
+		p
+			margin-bottom: 0
+			@media screen and(max-width: $sm)
+				margin-bottom: 5px
+	&__body-elem-img
+		display: flex
+		align-items: center
+		img
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+	&__body-right
+		display: flex
+		flex-direction: column
+		@media screen and(max-width: $sm)
+			flex-direction: row
+			align-items: center
+			justify-content: flex-start
+		a
+			margin-bottom: 20px
+			@media screen and(max-width: $sm)
+				margin-bottom: 0px
+				margin-right: 20px
+			&:hover
+				svg
+					fill: $accent
+					transition: all ease .2s
+			&:last-child
+				margin-bottom: 0
+		svg
+			width: 32px
+			height: 32px
+			fill: $black
+			transition: all ease .2s
+			@media screen and(max-width: $lg)
+				width: 28px
+				height: 28px
+	&__body-bottom
+		display: flex
+		align-items: center
+		margin-top: 20px
+		@media screen and(max-width: $xsm)
+			flex-direction: column
+			align-items: flex-start
+		span
+			font-size: 36px
+			color: $accent
+			font-weight: 600
+			margin-right: auto
+			@media screen and(max-width: $xl)
+				font-size: 30px
+			@media screen and(max-width: $lg)
+				font-size: 28px
+			@media screen and(max-width: $sm)
+				font-size: 24px
+			@media screen and(max-width: $xsm)
+				margin-bottom: 10px
+		p
+			margin-bottom: 0
+			color: #00a651
+			margin-right: 25px
+			@media screen and(max-width: $xsm)
+				margin-bottom: 10px
+		.button
+			&:hover
+				svg
+					fill: $black
+					transition: all ease .2s
+		svg
+			width: 16px
+			height: 16px
+			fill: $white
+			transition: all ease .2s
+			margin-right: 10px
+	&__target
+		display: flex
+		align-items: center
+		@media screen and(max-width: $lg)
+			flex-direction: column
+			align-items: flex-start
+	&__target-elem
+		padding: 20px 60px
+		cursor: pointer
+		color: #000
+		@media screen and(max-width: $lg)
+			padding: 15px 30px
+	&__target-elem.active
+		background-color: #f0f0f0
+		color: $accent
+	&__content-elem
+		display: flex
+		flex-direction: column
+		padding: 65px 50px
+		@media screen and(max-width: $lg)
+			padding: 30px
+		span
+			font-weight: 600
+			margin-bottom: 5px
+		p
+			line-height: 24px
+			margin-bottom: 35px
+			&:last-child
+				margin-bottom: 0
+	&__content-elem.myShow
+		background-color: #f0f0f0

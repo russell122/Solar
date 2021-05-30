@@ -1,0 +1,186 @@
+.basketEl
+	margin-bottom: 70px
+	@media only screen and (max-width: $xl)
+		margin-bottom: 50px
+	@media only screen and (max-width: $md)
+		margin-bottom: 30px
+	.title-2
+		margin-bottom: 40px
+		@media only screen and (max-width: $xl)
+			margin-bottom: 30px
+		@media only screen and (max-width: $md)
+			margin-bottom: 20px
+	&__wrap
+		border-top: solid 1px $borderColor
+		border-left: solid 1px $borderColor
+		border-right: solid 1px $borderColor
+		margin-bottom: 45px
+		@media only screen and (max-width: $xl)
+			margin-bottom: 30px
+	&__elem
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-bottom: solid 1px $borderColor
+		padding: 14px 45px 14px 14px
+		@media only screen and (max-width: $xl)
+			padding: 14px 30px 14px 14px
+		@media only screen and (max-width: $md)
+			flex-direction: column
+			align-items: flex-start
+		p
+			margin-bottom: 0
+			font-size: 16px
+			transition: all ease .2s
+			@media only screen and (max-width: $xl)
+				font-size: 14px
+		span
+			color: $accent
+			font-size: 24px
+			font-weight: 600
+			@media only screen and (max-width: $xl)
+				font-size: 20px
+			@media only screen and (max-width: $xl)
+				font-size: 18px
+	&__elem-info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 30%
+		@media only screen and (max-width: $xl)
+			width: 40%
+		@media only screen and (max-width: $md)
+			width: 100%
+	&__elem-link
+		display: flex
+		align-items: center
+		@media only screen and (max-width: $xl)
+			margin-bottom: 15px
+		&:hover
+			p
+				color: $accent
+				transition: all ease .2s
+	&__elem-img
+		margin-right: 30px
+		@media only screen and (max-width: $xl)
+			margin-right: 10px
+	&__elem-value
+		display: flex
+		input
+			width: 40px
+			height: 20px
+			border-radius: 0
+			outline: none
+			border: 1px solid $borderColor
+			text-align: center
+	&__cans
+		display: flex
+		align-items: center
+		&:hover
+			svg
+				fill: $accent
+				transition: all ease .2s
+		svg
+			width: 28px
+			height: 28px
+			fill: #cdcdcd
+			transition: all ease .2s
+			@media only screen and (max-width: $xl)
+				width: 20px
+				height: 20px
+	&__summ
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		@media only screen and (max-width: $xl)
+			margin-bottom: 20px
+		@media only screen and (max-width: $md)
+			flex-direction: column
+			align-items: flex-start
+		p
+			font-size: 16px
+			margin-bottom: 0
+			margin-right: 50px
+			line-height: 30px
+			display: flex
+			align-items: center
+			@media only screen and (max-width: $md)
+				font-size: 14px
+			&:last-child
+				margin-right: 0
+			span
+				font-size: 30px
+				font-weight: 600
+				margin-left: 10px
+				line-height: 30px
+				@media only screen and (max-width: $xl)
+					font-size: 24px
+				@media only screen and (max-width: $md)
+					font-size: 20px
+	&__btn
+		.button3
+			width: 218px
+			@media only screen and (max-width: $xl)
+				width: 200px
+			@media only screen and (max-width: $md)
+				width: 150px
+
+.basketEl__design
+	margin-bottom: 70px
+	@media only screen and (max-width: $lg)
+		margin-bottom: 50px
+	h2
+		margin-bottom: 40px
+		@media only screen and (max-width: $lg)
+			margin-bottom: 30px
+	&-elem
+		border: solid 1px $borderColor
+		padding: 40px 40px 40px 40px
+		margin-bottom: 30px
+		@media only screen and (max-width: $lg)
+			margin-bottom: 20px
+			padding: 30px
+		@media only screen and (max-width: $md)
+			padding: 20px
+		h4
+			font-size: 18px
+			margin-bottom: 30px
+			@media only screen and (max-width: $lg)
+				margin-bottom: 20px
+	&-sel
+		display: flex
+		justify-content: space-between
+		@media only screen and (max-width: $lg)
+			display: flex
+			flex-direction: column
+		label, input
+			width: 31%
+			margin-bottom: 19px
+			&:last-child
+				margin-bottom: 0
+			@media only screen and (max-width: $lg)
+				width: 100%
+		.g-select
+			border-radius: 0
+			font-weight: 400
+	.inp-full
+		width: 100%
+		margin-bottom: 0
+		margin-top: 19px
+	&-sel2
+		@media only screen and (max-width: $md)
+			display: flex
+			flex-direction: column
+	.form_radio_btn
+		label
+			width: 130px
+			height: 70px
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 0
+			margin-bottom: 0
+			border: 1px solid transparent
+	.form_radio_btn input[type=radio]:checked + label
+		background: transparent
+		border: 1px solid $borderColor

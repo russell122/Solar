@@ -1,0 +1,116 @@
+.calculator
+	&__wrap
+		display: flex
+		margin-bottom: 70px
+		@media only screen and (max-width: $md)
+			flex-wrap: wrap
+			flex-direction: column
+			margin-bottom: 50px
+	&__left
+		flex: 0 1 50%
+		@media only screen and (max-width: $md)
+			flex: 0 1 100%
+	&__right
+		flex: 0 1 50%
+		@media only screen and (max-width: $md)
+			flex: 0 1 100%
+	&__left-elem
+		margin-bottom: 25px
+		@media only screen and (max-width: $lg)
+			margin-bottom: 15px
+		p
+			margin-bottom: 25px
+			@media only screen and (max-width: $lg)
+				margin-bottom: 15px
+		.inp2
+			width: 350px
+			font-weight: 700
+			@media only screen and (max-width: $sm)
+				width: 100%
+		label
+			@media only screen and (max-width: $sm)
+				width: 100%
+		.g-select
+			width: 350px
+			@media only screen and (max-width: $sm)
+				width: 100%
+	&__right-body
+		border: 1px solid $accent
+		padding: 60px 160px 50px 68px
+		@media only screen and (max-width: $xl)
+			padding: 50px 50px 50px 50px
+		@media only screen and (max-width: $lg)
+			padding: 30px
+		@media only screen and (max-width: $sm)
+			padding: 20px
+		.title-4
+			margin-bottom: 20px
+		h3
+			font-size: 50px
+			color: $accent
+			margin-bottom: 3px
+			@media only screen and (max-width: $lg)
+				font-size: 40px
+			@media only screen and (max-width: $md)
+				font-size: 30px
+
+		p
+			color: $accent
+			margin-bottom: 30px
+			@media only screen and (max-width: $lg)
+				margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+	&__right-el
+		margin-bottom: 35px
+		@media only screen and (max-width: $lg)
+			margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+	&__rec-body
+		border: 1px solid $accent
+		padding: 50px 100px 84px 50px
+		display: flex
+		margin-bottom: 100px
+		position: relative
+		@media only screen and (max-width: $xl)
+			padding: 40px
+			margin-bottom: 70px
+		@media only screen and (max-width: $lg)
+			flex-direction: column
+			flex-wrap: wrap
+		.title-2
+			line-height: inherit
+			width: 400px
+			@media only screen and (max-width: $xl)
+				width: 350px
+			@media only screen and (max-width: $xl)
+				width: 100%
+		p
+			line-height: 30px
+		h3
+			font-size: 48px
+			color: $accent
+			@media only screen and (max-width: $xl)
+				font-size: 40px
+			@media only screen and (max-width: $lg)
+				font-size: 34px
+			@media only screen and (max-width: $md)
+				font-size: 30px
+			@media only screen and (max-width: $sm)
+				font-size: 24px
+	&__rec-el
+		margin-right: 70px
+		@media only screen and (max-width: $xl)
+			margin-right: 30px
+	&__rec-el2
+		margin-right: 0px
+	&__rec-btn
+		position: absolute
+		bottom: -27.5px
+		left: 50%
+		transform: translate(-50%, 0%)
+		padding: 0 30px
+		background-color: $white
+		.button3
+			background-color: $accent

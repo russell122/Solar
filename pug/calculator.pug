@@ -1,0 +1,75 @@
+extends layout/main2
+
+block variables
+	- let title = 'Название - Страница'
+
+
+
+block content
+	//- include section-performed/performedEl
+	include modals/modals
+	.calculator.g-ind
+		.container 
+			ul.breadcrumbs
+				li 
+					a(href="#") Главная 
+				li 
+					a(href="#") Калькулятор
+			.calculator__wrap 
+				.calculator__left
+					h2.title-1-b Калькулятор
+					.calculator__left-elem 
+						p Годовая оплата за электроэнергию (руб.)
+						input(type="text" placeholder="520 000").inp2
+					.calculator__left-elem 
+						p Годовое потребление электроэнергии (кВт/ч)
+						input(type="text" placeholder="60 000").inp2
+					.calculator__left-elem 
+						p Регион
+						label
+							select.g-select
+								option(value="Московская область") Московская область
+					.calculator__left-elem 
+						p Подключенная электросеть
+						.form_radio_btn
+							input#radio-1(type='radio' name='radio' value='1')
+							label(for='radio-1') Трехфазная
+						.form_radio_btn
+							input#radio-2(type='radio' name='radio' value='2' checked='')
+							label(for='radio-2') Однофазная
+				.calculator__right
+					.calculator__right-body
+						.calculator__right-el
+							h4.title-4 Ваши показатели
+							h3 8.67 руб 
+							p Фактический тариф
+							h3 520 000 руб.
+							p Годовая оплата за электроэнергию
+						.calculator__right-el
+							h4.title-4 После установки станции
+							h3 2.46 руб. 
+							p Тариф солнечной станции
+							h3 329 112 руб.
+							p Годовая оплата за электроэнергию <br> после установки станции
+			.calculator__rec
+				.calculator__rec-body
+					h2.title-2 Рекомендуемая станция:
+					.calculator__rec-el
+						p Мощность станции
+						h3 15 кВт
+					.calculator__rec-el.calculator__rec-el2
+						p Стоимость солнечной станции
+						h3 ≈ 1 354 732 руб.
+					.calculator__rec-btn
+						a(href="#").button3 Оставить заявку 
+
+
+
+
+//- block libs-css
+	// библиотека.css
+	link(rel="stylesheet" href="libs/library/library.css")
+
+//- block libs-js
+	// библиотека.js
+	script(src="libs/library/library.js")

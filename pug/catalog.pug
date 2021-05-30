@@ -1,0 +1,23 @@
+extends layout/main2
+
+block variables
+	- let title = 'Название - Страница'
+
+
+
+block content
+	include sections-page/catalogEl
+	include modals/modals
+	//- include sections-page/catalogSlider
+
+
+
+
+
+//- block libs-css
+	// библиотека.css
+	link(rel="stylesheet" href="libs/library/library.css")
+
+//- block libs-js
+	// библиотека.js
+	script(src="libs/library/library.js")

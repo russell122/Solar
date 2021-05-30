@@ -1,0 +1,36 @@
+extends layout/main2
+
+block variables
+	- let title = 'Название - Главная'
+
+
+
+block content
+	include modals/modals
+	section.sitemap.g-ind
+		.container
+			ul.g-ul 
+				li 
+					a(href="index.html").g-link index
+				li 
+					a(href="articles.html").g-link articles
+				li 
+					a(href="basket.html").g-link basket
+				li 
+					a(href="calculator.html").g-link calculator
+				li 
+					a(href="card.html").g-link card
+				li 
+					a(href="catalog.html").g-link catalog
+				li 
+					a(href="contact.html").g-link contact
+				li 
+					a(href="performed.html").g-link performed
+				li 
+					a(href="sitemap.html").g-link sitemap
+				li 
+					a(href="typical.html").g-link typical.html
+			.sitemap__mod
+				a(href="#").button.popup__t('data-modal'="popup__callback") Обратный звонок 
+				a(href="#").button.popup__order-btn.popup__t('data-modal'="popup__order") Вход
+				a(href="#").button.popup__order-btn2.popup__t('data-modal'="popup__order2") Регистрация

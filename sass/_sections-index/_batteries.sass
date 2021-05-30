@@ -1,0 +1,81 @@
+.batteries
+	margin-bottom: 68px
+	@media only screen and (max-width: $lg)
+		margin-bottom: 40px
+	&__row
+		display: flex
+		@media only screen and (max-width: $lg)
+			flex-wrap: wrap
+			flex-direction: column-reverse
+	&__left
+		flex: 0 0 50%
+		background-image: url(../img/index/bg2.jpg)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		min-height: 900px
+		@media only screen and (max-width: $lg)
+			flex: 0 1 100%
+			min-height: 500px
+		@media only screen and (max-width: $md)
+			min-height: 400px
+		@media only screen and (max-width: $sm)
+			min-height: 300px
+	&__right
+		flex: 0 0 50%
+		@media only screen and (max-width: $lg)
+			flex: 0 1 100%
+	&__right-el
+		@media only screen and (max-width: $md)
+			padding-left: 30px
+	&__right-body
+		padding: 193px 0 0 70px
+		width: 530px
+		@media only screen and (max-width: $xl)
+			width: 100%
+		@media only screen and (max-width: $lg)
+			padding: 50px 30px
+		@media only screen and (max-width: $md)
+			padding: 50px 15px
+		h2
+			margin-bottom: 65px
+			@media only screen and (max-width: $xl)
+				margin-bottom: 40px
+			@media only screen and (max-width: $md)
+				margin-bottom: 20px
+		p
+			line-height: 30px
+			margin-bottom: 40px
+	&__right-el
+		a
+			display: flex
+			align-items: center
+		.batteries__right-fig
+			width: 48px
+			height: 48px
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			box-shadow: 5px 8.7px 20px 0 rgba(247, 145, 29, 0.4)
+			position: relative
+			background-color: $accent2
+			transition: all ease .2s
+			&:hover
+				background-color: $accent
+			&::before
+				content: ''
+				position: absolute
+				border: solid 1px #f0f0f0
+				width: 95px
+				height: 95px
+				border-radius: 50%
+		svg
+			width: 16px
+			height: 16px
+			fill: #fff
+		span
+			font-weight: 700
+			margin-left: 18px
+			position: relative
+			z-index: 2

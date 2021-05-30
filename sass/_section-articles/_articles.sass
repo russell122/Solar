@@ -1,0 +1,76 @@
+.articlesEl
+	padding-top: 167px
+	@media only screen and (max-width: $md)
+		padding-top: 140px
+	.pages
+		margin: 0px 0 70px 0
+		@media only screen and (max-width: $lg)
+			margin: 0px 0 50px 0
+		@media only screen and (max-width: $md)
+			margin: 0px 0 30px 0
+	&__target
+		display: flex
+		margin-bottom: 40px
+		@media only screen and (max-width: $md)
+			margin-bottom: 30px
+		a
+			width: 106px
+			height: 34px
+			display: block
+			background-color: #e6e6e6
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: all ease .2s
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
+			&:hover
+				color: $accent
+				transition: all ease .2s
+		a.active
+			background-color: $accent
+			color: $white
+			transition: all ease .2s
+			&:hover
+				color: $black
+				transition: all ease .2s
+	&__content-1
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__elem
+		flex: 0 1 31%
+		margin-bottom: 50px
+		@media only screen and (max-width: $lg)
+			flex: 0 1 48%
+		@media only screen and (max-width: $md)
+			flex: 0 1 100%
+			margin-bottom: 30px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&:hover
+			.articlesEl__elem-img
+				img
+					transform: scale(1.1)
+					transition: all ease .2s
+			.articlesEl__elem-body
+				.title-4
+					color: $accent
+					transition: all ease .2s
+	&__elem-img
+		height: 250px
+		margin-bottom: 30px
+		overflow: hidden
+		@media only screen and (max-width: $md)
+			margin-bottom: 20px
+		img
+			height: 100%
+			transition: all ease .2s
+	&__elem-body
+		p
+			line-height: 24px
+		.title-4
+			transition: all ease .2s

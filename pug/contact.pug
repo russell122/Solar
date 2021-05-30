@@ -1,0 +1,61 @@
+extends layout/main2
+
+block variables
+	- let title = 'Название - Страница'
+
+
+
+block content
+	//- include section-performed/performedEl
+	include modals/modals
+	.contactEl
+		.container 
+			ul.breadcrumbs
+				li 
+					a(href="#") Главная
+				li 
+					a(href="#") Контакты  
+			h2.title-2 Контактная информация
+			.contactEl__soc
+				.contactEl__soc-el 
+					.contactEl__soc-img 
+						img.img(src="img/index/cont-1.png", alt="cont-1")
+					.contactEl__soc-body
+						p Россия, Москва
+						p Московская улица, 21
+				.contactEl__soc-el 
+					.contactEl__soc-img 
+						img.img(src="img/index/cont-2.png", alt="cont-2")
+					.contactEl__soc-body
+						a(href="#").g-link.g-link-bold +7 (915) 135-33-26
+						a(href="#").g-link info-d@solar-force.ru
+				.contactEl__soc-el 
+					.contactEl__soc-img 
+						img.img(src="img/index/cont-3.png", alt="cont-3")
+					.contactEl__soc-body
+						p Работаем ежедневно
+						p с 9:00 до 18:00 МСК
+			.contactEl__map 
+				iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A3ec10c5acbba6f60443e1548aebf3c0312e25bac5e2df7fe2770dfe97892470c&source=constructor' width='100%' height='270' frameborder='0')
+			.contactEl__body 
+				h3.title-3 Остались вопросы?
+				p.txt Оставьте Ваше сообщение и контактные данные и наши специалисты свяжутся с Вами в ближайшее рабочее время для решения Вашего вопроса.
+			.contactEl__inps 
+				input(type="text" placeholder="Ваше имя").inp2
+				input(type="tel" placeholder="Ваш телефон").inp2
+				a(href="#").button3 Отправить
+				.myInp
+					input#check5(type='checkbox')
+					label(for='check5') Я согласен на 
+						a(href="#") обработку<br> персональных данных.*  
+
+
+
+
+//- block libs-css
+	// библиотека.css
+	link(rel="stylesheet" href="libs/library/library.css")
+
+//- block libs-js
+	// библиотека.js
+	script(src="libs/library/library.js")

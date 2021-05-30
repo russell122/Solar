@@ -1,0 +1,234 @@
+/* ----- header ----- */
+.header
+	position: absolute
+	margin-bottom: 40px
+	top: 0
+	left: 0
+	z-index: 2
+	width: 100%
+	// padding-top: 40px
+	transition: all ease .2s
+	z-index: 20
+	&__burger
+		display: none
+		@media only screen and (max-width: $lg)
+			margin-left: 20px
+	&__top
+		border-bottom: 1px solid $borderColor
+		padding: 25px 0
+		background-color: #fff
+		@media only screen and (max-width: $md)
+			padding: 15px 0
+		.container
+			display: flex
+		@media only screen and (max-width: $sm)
+			display: none
+	&__top-search
+		display: flex
+		align-items: center
+		order: -1
+		@media only screen and (max-width: $sm)
+			order: 0
+		svg
+			width: 16px
+			height: 16px
+			fill: $black
+			margin-right: 20px
+			cursor: pointer
+		input
+			border: none
+			outline: none
+			font-size: 14px
+			@media only screen and (max-width: $sm)
+				height: 40px
+	&__top-soc
+		display: flex
+		align-items: center
+		margin-left: auto
+		@media only screen and (max-width: $sm)
+			margin-left: 0
+			margin-bottom: 20px
+		a
+			display: block
+			width: 16px
+			height: 16px
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+		svg
+			width: 16px
+			height: 16px
+			fill: $black
+			transition: all ease .2s
+			&:hover
+				fill: $accent
+	&__top-mob
+		font-size: 14px
+		font-weight: 500
+		width: auto!important
+		height: auto!important
+		margin-left: 15px
+	&__wrap
+		color: $white
+		padding: 15px 0
+		// border-bottom: 1px solid $borderColor
+		// background-color: #fff
+		.container
+			display: flex
+			align-items: center
+			justify-content: space-between
+			@media only screen and (max-width: $lg)
+				justify-content: flex-start
+	&__logo
+		img
+			@media only screen and (max-width: $xl)
+				width: 150px
+			@media only screen and (max-width: $sm)
+				width: 100px
+	&__mnu
+		@media only screen and (max-width: $lg)
+			color: $black
+		@media only screen and (max-width: $sm)
+			flex-direction: column
+	&__list
+		list-style-type: none
+		display: flex
+		margin-bottom: 0
+		padding: 0
+		@media only screen and (max-width: $sm)
+			margin-bottom: 40px
+		li
+			margin-right: 20px
+			@media only screen and (max-width: $xl)
+				margin-right: 5px
+			&:last-child
+				margin-right: 0
+	&__link
+		position: relative
+		transition: all ease .2s
+		color: $white
+		font-size: 14px
+		font-weight: 500
+		padding-left: 20px
+		@media only screen and (max-width: $xl)
+			padding-left: 15px
+		&:hover
+			color: $accent
+		@media only screen and (max-width: $lg)
+			font-size: 20px
+		@media only screen and (max-width: $sm)
+			font-size: 16px
+		&:hover
+			color: $accent
+	&__btn
+		.button
+			@media only screen and (max-width: $sm)
+				font-size: 12px
+		@media only screen and (max-width: $lg)
+			margin-left: auto
+	&__link.active
+		position: relative
+		transition: all ease .2s
+		color: $accent
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			width: 15px
+			height: 1px
+			background-color: $accent
+		@media only screen and (max-width: $xl)
+			&::before
+				width: 10px
+
+.header.active
+	position: fixed
+	animation: smoothScroll .8s forwards
+	transition: all ease .2s
+	// padding: 20px 0
+	background-color: $black
+	box-shadow: 0px 5px 10px rgba(184, 187, 190, 0.5)
+	.header__top
+		display: none
+.header2
+	.header__link
+		color: $black
+		&:hover
+			color: $accent
+	.header__link.active
+		color: $accent
+.header2.active
+	background-color: $white
+
+@media screen and (max-width: 992px)
+	body.lock
+		overflow: hidden
+	.header
+		&:before
+			z-index: 3
+		.header__burger
+			display: block
+			position: relative
+			width: 30px
+			height: 20px
+			z-index: 3
+			&:before, &:after
+				content: ''
+				background-color: $accent
+				position: absolute
+				width: 100%
+				height: 2px
+				left: 0
+				transition: all 0.3s ease 0s
+			&:before
+				top: 0
+			&:after
+				bottom: 0
+			span
+				position: absolute
+				background-color: $accent
+				left: 0
+				width: 100%
+				height: 2px
+				top: 9px
+				transition: all 0.3s ease 0s
+		.header__burger.active
+			&:before
+				transform: rotate(45deg)
+				top: 9px
+			&:after
+				transform: rotate(-45deg)
+				bottom: 9px
+			span
+				transform: scale(0)
+		.header__mnu
+			position: fixed
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgb(238, 238, 238)
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			transition: all 0.3s ease 0s
+			overflow: auto
+			.header__list
+				display: block
+				padding: 0
+				li
+					margin-bottom: 40px
+					margin-right: 15px
+					a
+						color: $black
+						&:hover
+							color: $accent
+					a.active
+						color: $accent
+					&:last-child
+						margin-bottom: 0
+		.header__mnu.active
+			top: 0
+			z-index: 2

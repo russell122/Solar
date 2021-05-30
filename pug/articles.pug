@@ -1,0 +1,96 @@
+extends layout/main2
+
+block variables
+	- let title = 'Название - Страница'
+
+
+
+block content
+	//- include section-performed/performedEl
+	include modals/modals
+	.articlesEl
+		.container 
+			ul.breadcrumbs
+				li 
+					a(href="#") Главная
+				li 
+					a(href="#") Статьи
+			.articlesEl__target 
+				a(href="#").active Статьи
+				a(href="#") Видео
+			.articlesEl__content
+				.articlesEl__content-1
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st1.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Сетевая солнечная электростанция
+							p Автономные солнечные электростанции становятся все более популярными среди частных пользователей.
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st2.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Подбор солнечой системы
+							p Какие физические величины используются в солнечных электростанциях? Что означает каждая из этих величин, и в чем она измеряется?
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st3.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Сечение провода
+							p При покупке солнечных панелей особое внимание следует уделить выбору дополнительного оборудования. 
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st4.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Как подобрать аккумуляторы
+							p Автономные солнечные электростанции становятся все более популярными среди частных пользователей.
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st5.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Солнечный контроллер заряда
+							p Какие физические величины используются в солнечных электростанциях? Что означает каждая из этих величин, и в чем она измеряется?
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st6.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Правильное расположение солнечных батарей
+							p Правильная установка и расположение солнечных батарей оказывает большое влияние на эффективность установки и, как следствие, на рентабельность ее использования, поэтому этому вопросу следует уделить большое внимание.
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st1.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Сетевая солнечная электростанция
+							p Автономные солнечные электростанции становятся все более популярными среди частных пользователей.
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st2.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Подбор солнечой системы
+							p Какие физические величины используются в солнечных электростанциях? Что означает каждая из этих величин, и в чем она измеряется?
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							img.img(src="img/index/st3.png", alt="")
+						.articlesEl__elem-body 
+							h4.title-4 Сечение провода
+							p При покупке солнечных панелей особое внимание следует уделить выбору дополнительного оборудования. 
+				.articlesEl__content-1
+					a(href="#").articlesEl__elem 
+						.articlesEl__elem-img 
+							iframe(width='100%' height='250' src='https://www.youtube.com/embed/MnrJzXM7a6o' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+						.articlesEl__elem-body 
+							h4.title-4 Сетевая солнечная электростанция
+							p Автономные солнечные электростанции становятся все более популярными среди частных пользователей.
+			include sections-page/pages  
+			include sections-index/help2  
+
+
+
+
+//- block libs-css
+	// библиотека.css
+	link(rel="stylesheet" href="libs/library/library.css")
+
+//- block libs-js
+	// библиотека.js
+	script(src="libs/library/library.js")

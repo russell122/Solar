@@ -1,0 +1,55 @@
+.help
+	background-image: url(../img/index/bg6.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 580px
+	position: relative
+	// margin-bottom: 90px
+	@media only screen and (max-width: $lg)
+		height: 650px
+		// margin-bottom: 50px
+	@media only screen and (max-width: $md)
+		height: 580px
+	@media only screen and (max-width: $sm)
+		// margin-bottom: 30px
+	.title-1
+		@media only screen and (max-width: $md)
+			margin-bottom: 30px
+	&__wrap
+		display: flex
+		padding-top: 130px
+		@media only screen and (max-width: $md)
+			padding-top: 80px
+			flex-wrap: wrap
+			flex-direction: column
+		@media only screen and (max-width: $sm)
+			padding-top: 40px
+	&__left
+		flex: 0 1 56%
+	&__right
+		flex: 0 1 44%
+		h4
+			font-size: 18px
+			font-weight: 600
+			line-height: 30px
+			color: $white
+			margin-bottom: 30px
+			@media only screen and (max-width: $md)
+				margin-bottom: 10px
+		.button2
+			width: 218px
+	.g-ul
+		li
+			padding-left: 20px
+			position: relative
+			&::before
+				position: absolute
+				top: 2px
+				left: 0
+				content: ''
+				background-image: url(../img/index/l.png)
+				width: 14px
+				height: 14px
+				background-repeat: no-repeat
+				background-position: center center
