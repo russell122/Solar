@@ -5,8 +5,12 @@ $(function () {
 			$loader = $preloader.find('.loader');
 		$loader.fadeOut();
 		$preloader.delay(350).fadeOut('slow');
+
 		$preloader.remove();
+		$loader.remove();
 	});
+
+
 
 	$('.js-accordion-btn').click(function () {
 
