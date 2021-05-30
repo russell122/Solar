@@ -329,6 +329,16 @@ $(function () {
 });
 
 
+function myPreloader() {
+	$preloader = $('.loaderArea'),
+		$loader = $preloader.find('.loader');
+
+	$preloader.remove();
+	$loader.remove();
+}
+
+setTimeout(myPreloader, 5000)
+
 let myHeader = document.querySelector('.header');
 
 window.addEventListener('scroll', (e) => {
